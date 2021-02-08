@@ -1,14 +1,9 @@
 <template>
   <div id="app">
-
-    <el-container>
-      <el-header>Header</el-header>
-      <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container>
-
+    <!-- 路由显示的内容 可以配合router-link使用 可以切换路由-->
+    <!-- <router-link to="/">首页</router-link> -->
+    <!-- <router-link to="/Overview">111</router-link> -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -20,17 +15,3 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

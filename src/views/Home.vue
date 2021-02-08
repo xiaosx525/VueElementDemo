@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <h2>这里是首页</h2>
+   <test-element>1111</test-element>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+/**
+ * 引入自己定义的组件
+ */
+import TestElement from '@/components/TestElement';
 export default {
   name: 'Home',
+  //注册组件
   components: {
-    HelloWorld
+    TestElement
   }
 }
 </script>
